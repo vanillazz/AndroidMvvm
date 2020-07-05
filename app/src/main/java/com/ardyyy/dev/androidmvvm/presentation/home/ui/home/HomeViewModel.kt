@@ -1,4 +1,4 @@
-package com.ardyyy.dev.androidmvvm.presentation.ui.home
+package com.ardyyy.dev.androidmvvm.presentation.home.ui.home
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
@@ -30,7 +30,7 @@ class HomeViewModel(
                 result.apply {
                     if (data != null) {
                         if (data.isNotEmpty()) {
-                            data?.let { usersRepository.insertAllUser(it) }
+                            data.let { usersRepository.insertAllUser(it) }
                             fetchLocal()
                         }
                     }
@@ -42,7 +42,7 @@ class HomeViewModel(
     }
 
     private fun fetchLocal() {
-        var tempLocal = usersRepository.getAllUser()
+        val tempLocal = usersRepository.getAllUser()
         usersData.postValue(UiState.Success(UsersData(data = tempLocal)))
     }
 

@@ -1,10 +1,7 @@
 package com.ardyyy.dev.androidmvvm
 
 import androidx.multidex.MultiDexApplication
-import com.ardyyy.dev.androidmvvm.di.apiModule
-import com.ardyyy.dev.androidmvvm.di.dbModule
-import com.ardyyy.dev.androidmvvm.di.featureModule
-import com.ardyyy.dev.androidmvvm.di.viewModelModule
+import com.ardyyy.dev.androidmvvm.di.*
 import org.koin.android.ext.koin.androidContext
 import org.koin.core.context.startKoin
 
@@ -13,6 +10,7 @@ class App : MultiDexApplication() {
         apiModule,
         featureModule,
         dbModule,
+        preferenceModule,
         viewModelModule
     )
 

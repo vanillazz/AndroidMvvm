@@ -1,4 +1,4 @@
-package com.ardyyy.dev.androidmvvm.presentation.ui.home
+package com.ardyyy.dev.androidmvvm.presentation.home.ui.home
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -25,7 +25,7 @@ class HomeAdapter(private val obj: List<User>, private var onClick: (User) -> Un
     }
 
     override fun onBindViewHolder(holder: ContentViewHolder, position: Int) {
-        (holder as ContentViewHolder).bind(obj[position], holder.itemView.context)
+        holder.bind(obj[position], holder.itemView.context)
     }
 
     inner class ContentViewHolder(mView: View) :

@@ -7,5 +7,6 @@
     <color name="colorWhite">#FFF</color>
     <color name="skeleton">#E1E5EA</color>
     <color name="colorButtonBlue">#00C8FF</color>
+    <color name="colorRed">#D5473C</color>
 
 </resources>

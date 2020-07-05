@@ -10,16 +10,6 @@
 
     </style>
 
-    <!-- Base application theme. -->
-    <style name="AppTheme2" parent="Theme.MaterialComponents.Light">
-        <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
-        <item name="colorControlNormal">@color/colorWhite</item>
-
-    </style>
-
     <!-- set the rounded drawable as background to your bottom sheet -->
     <style name="BottomSheet" parent="@style/Widget.Design.BottomSheet.Modal">
         <item name="android:background">@drawable/bg_bottom_sheet_dialog_fragment</item>
@@ -48,5 +38,13 @@
         <item name="android:focusable">false</item>
         <item name="android:background">@drawable/ripple_rounded</item>
     </style>
+
+    <style name="TextInputLayoutAppearance" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">@color/colorPrimary</item>
+        <item name="boxStrokeErrorColor">@color/colorRed</item>
+        <item name="boxStrokeWidth">1dp</item>
+
+    </style>
+
 
 </resources>

@@ -16,9 +16,8 @@
         android:theme="@style/AppTheme"
         tools:targetApi="m">
         <activity
-            android:name=".presentation.MainActivity"
-            android:label="@string/app_name"
-            android:theme="@style/AppTheme2">
+            android:name=".presentation.home.MainActivity"
+            android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -27,7 +26,8 @@
         </activity>
         <activity
             android:name=".presentation.detail.DetailActivity"
-            android:label="Detail Users" />
+            android:label="Detail Users"
+            android:parentActivityName=".presentation.home.MainActivity"/>
     </application>
 
 </manifest>

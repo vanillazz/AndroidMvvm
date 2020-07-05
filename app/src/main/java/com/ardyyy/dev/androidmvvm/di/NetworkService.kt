@@ -1,10 +1,8 @@
 package com.ardyyy.dev.androidmvvm.di
 
 import android.content.Context
-import android.os.Build
 import com.ardyyy.dev.androidmvvm.BuildConfig
 import com.ardyyy.dev.androidmvvm.data.remote.ApiService
-import com.google.android.gms.security.ProviderInstaller
 import com.jakewharton.retrofit2.adapter.kotlin.coroutines.CoroutineCallAdapterFactory
 import com.readystatesoftware.chuck.ChuckInterceptor
 import com.squareup.moshi.Moshi
@@ -30,9 +28,6 @@ private fun httpInterceptor() = HttpLoggingInterceptor().apply {
 }
 
 fun provideOkHttpClient(context: Context): OkHttpClient {
-    if (Build.VERSION.SDK_INT < Build.VERSION_CODES.LOLLIPOP) {
-        ProviderInstaller.installIfNeeded(context)
-    }
     val httpClient = OkHttpClient.Builder()
     httpClient.apply {
         writeTimeout(60, TimeUnit.SECONDS)

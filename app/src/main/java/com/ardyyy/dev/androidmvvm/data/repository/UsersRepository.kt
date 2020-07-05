@@ -8,8 +8,6 @@ class UsersRepository(private val dao: AppDao, private val apiService: ApiServic
 
     fun getAllUser() = dao.getAllUser()
     fun insertAllUser(users: List<User>) = dao.insertAll(users)
-    fun deleteAllUser() = dao.deleteAll()
-    fun getUserById(id: Int) = dao.getUserById(id)
 
     suspend fun getUsersData() = apiService.getUsersData()
 }

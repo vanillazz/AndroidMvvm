@@ -31,6 +31,8 @@ data class User(
 
     @ColumnInfo(name = "email")
     @Json(name = "email")
-    val email: String? = null
+    val email: String? = null,
+
+    val gender: Boolean? = null
 
 ) : Parcelable

@@ -7,13 +7,13 @@
 
     <fragment
         android:id="@+id/navigation_home"
-        android:name="com.ardyyy.dev.androidmvvm.presentation.ui.home.HomeFragment"
+        android:name="com.ardyyy.dev.androidmvvm.presentation.home.ui.home.HomeFragment"
         android:label="@string/title_home"
         tools:layout="@layout/fragment_home" />
 
     <fragment
         android:id="@+id/navigation_profile"
-        android:name="com.ardyyy.dev.androidmvvm.presentation.ui.profile.ProfileFragment"
+        android:name="com.ardyyy.dev.androidmvvm.presentation.home.ui.profile.ProfileFragment"
         android:label="@string/title_profile"
         tools:layout="@layout/fragment_profile" />
 
